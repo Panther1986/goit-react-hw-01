@@ -1,14 +1,14 @@
-// src/App.jsx
+// src/components/App.jsx
 
-import { BookList } from './BookList';
-import {favouriteBooks } from './FavouriteBooks';
+import { Alert } from "./Alert";
 
 export const App = () => {
   return (
     <>
-			<h1>Books of the week</h1>
-      <BookList books={favouriteBooks} />
+      <Alert variant="info">Please update your email!</Alert>
+      <Alert variant="error">There was an error during transaction!</Alert>
+      <Alert variant="success">Payment received, thank you for your purchase!</Alert>
+      <Alert variant="warning">Please update your profile contact information</Alert>
     </>
   );
 };
-
