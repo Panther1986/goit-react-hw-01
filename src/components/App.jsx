@@ -1,14 +1,18 @@
 // src/components/App.jsx
 
-import { Alert } from "./Alert";
+import { Profile } from "./Profile";
+import { userData } from "../components/userData";
 
 export const App = () => {
   return (
     <>
-      <Alert variant="info">Please update your email!</Alert>
-      <Alert variant="error">There was an error during transaction!</Alert>
-      <Alert variant="success">Payment received, thank you for your purchase!</Alert>
-      <Alert variant="warning">Please update your profile contact information</Alert>
+      <Profile
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
     </>
   );
 };
