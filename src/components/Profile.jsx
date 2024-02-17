@@ -1,3 +1,4 @@
+import userData from "./userData";
 
 export const Profile = ({
     name,

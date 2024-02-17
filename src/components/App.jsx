@@ -2,6 +2,9 @@
 
 import { Profile } from "./Profile";
 import { userData } from "../components/userData";
+import friends from "./friends";
+import FriendList from "./FriendList";
+import FriendListItem from "./FriendListItem";
 
 export const App = () => {
   return (
@@ -13,6 +16,7 @@ export const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
+       <FriendList friends={friends} />
     </>
   );
 };
