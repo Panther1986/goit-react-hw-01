@@ -1,12 +1,12 @@
 // src/components/App.jsx
 
-import { Profile } from "./Profile";
-import { userData } from "../components/userData";
-import friends from "./friends";
+import Profile from "./Profile";
+import userData from "./userData.json";
+import friends from "./friends.json";
 import FriendList from "./FriendList";
-import FriendListItem from "./FriendListItem";
 
-export const App = () => {
+
+const App = () => {
   return (
     <>
       <Profile
@@ -20,3 +20,6 @@ export const App = () => {
     </>
   );
 };
+
+
+export default App;

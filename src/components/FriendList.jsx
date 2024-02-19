@@ -1,7 +1,7 @@
-import { FriendListItem } from "./FriendListItem";
-import friends from "./friends";
+import  FriendListItem  from "./FriendListItem";
+import friends from "./friends.json";
 
-export const FriendList = ({ friends }) => {
+const FriendList = ({ friends }) => {
     return (
         <ul>
             {friends.map((friend) => {

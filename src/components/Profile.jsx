@@ -1,6 +1,6 @@
-import userData from "./userData";
 
-export const Profile = ({
+
+const Profile = ({
     name,
     tag,
     location,
