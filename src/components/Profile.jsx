@@ -1,7 +1,7 @@
-
+import userData from './userData.json';
 
 const Profile = ({
-    name,
+    username,
     tag,
     location,
     image,
@@ -10,25 +10,25 @@ const Profile = ({
     <div>
         <div>
             <img
-                src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+                src={image}
                 alt="User avatar"
             />
-            <p>Petra Marica</p>
-            <p>@pmarica</p>
-            <p>Salvador, Brasil</p>
+            <p>{username}</p>
+            <p>@{tag}</p>
+            <p>{location}</p>
         </div>
 
         <ul>
             <li>
-                <span>Followers</span>
+                <span>{stats.followers}</span>
                 <span>1000</span>
             </li>
             <li>
-                <span>Views</span>
+                <span>{stats.views}</span>
                 <span>2000</span>
             </li>
             <li>
-                <span>Likes</span>
+                <span>{stats.likes}</span>
                 <span>3000</span>
             </li>
         </ul>
