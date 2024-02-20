@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
+import friends from "./friends.json";
 
-const FriendListItem = ({ avatar, name, isOnline }) => {
+
+export const FriendListItem = ({ avatar, name, isOnline }) => {
     return (
         <div>
             <img src={avatar} alt="Avatar" width="48" />
@@ -17,4 +19,3 @@ FriendListItem.protoTypes = {
     isOnline: PropTypes.bool.isRequired
 };
 
-export default FriendListItem;

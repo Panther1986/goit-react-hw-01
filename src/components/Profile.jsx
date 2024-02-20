@@ -1,40 +1,32 @@
-import userData from './userData.json';
 
-const Profile = ({
-    username,
-    tag,
-    location,
-    image,
-    stats
-}) => (
-    <div>
-        <div>
-            <img
-                src={image}
-                alt="User avatar"
-            />
-            <p>{username}</p>
+
+export const Profile = ({name, tag, location, image, stats}) => (
+  <div>
+  <div>
+    <img
+      src={image}
+      alt="User avatar"
+    />
+            <p>{name}</p>
             <p>@{tag}</p>
             <p>{location}</p>
-        </div>
+  </div>
 
-        <ul>
-            <li>
+  <ul>
+    <li>
+      <span>Followers</span>
                 <span>{stats.followers}</span>
-                <span>1000</span>
-            </li>
-            <li>
+    </li>
+    <li>
+      <span>Views</span>
                 <span>{stats.views}</span>
-                <span>2000</span>
-            </li>
-            <li>
+    </li>
+    <li>
+      <span>Likes</span>
                 <span>{stats.likes}</span>
-                <span>3000</span>
-            </li>
-        </ul>
-    </div>
+    </li>
+  </ul>
+</div>
 
 );
 
-
-export default Profile;
