@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
-import friends from "./friends.json";
 
 
-export const FriendListItem = ({ avatar, name, isOnline }) => {
+export const FriendListItem = ({ friend }) => {
+    const { avatar, name, isOnline } = friend;
     return (
-        <div>
+        <li>
             <img src={avatar} alt="Avatar" width="48" />
             <p>{name}</p>
             <p>{isOnline}</p>
-        </div>
+        </li>
     );
 };
 
@@ -16,6 +16,6 @@ export const FriendListItem = ({ avatar, name, isOnline }) => {
 FriendListItem.protoTypes = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired
+    isOnline: PropTypes.string.isRequired
 };
 

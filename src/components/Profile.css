@@ -1,0 +1,20 @@
+.profile-container {
+    padding-top: 4px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background-color: darkgray;
+    color: black;
+}
+
+.profile-img {
+    border-radius: 50px;
+    border: none;
+}
+
+.user-name {
+    color: black;
+}
+
+.user-tag {
+    color: grey;
+}
