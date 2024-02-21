@@ -1,0 +1,47 @@
+.profileContainer {
+    padding-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background-color: rgb(250, 248, 248);
+    color: black;
+
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.profileImg {
+    display: block;
+    border-radius: 50px;
+width: 100px;
+height: 100px;
+background-color: black;
+margin: 0 auto;
+}
+
+.userName {
+    color: black;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.userTag {
+    color: grey;
+}
+
+.profileList {
+    display: flex;
+text-decoration: none;
+    padding-top: 100px;
+}
+
+.profileListItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgb(36, 35, 35);
+    width: 100%;
+}
